@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--primary-color-light: rgb(124, 116, 116);
+--secondary-color:rgb(255, 255, 255);
+--font-color: rgb(0, 0, 0);
+--input-background-color:rgb(83, 81, 81);
+}
+.dark{
+    --secondary-color:rgb(50, 49, 49);
+    --primary-color-light: rgb(30, 27, 32);
+--font-color: rgb(255, 255, 255);
+--input-background-color:rgb(83, 81, 81);
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    padding: 10rem ;
+    background-color: var(--primary-color-light);
+}
+.sign-up{
+width: 15rem;
+height: 25rem;
+background-color: var(--secondary-color-light);
+z-index: 1;
+border: 1px solid red;
+
+}
