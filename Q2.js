@@ -6,10 +6,10 @@ let item={
     PriceA:3000,
     Total:18000,
 }
-item.push(Add);
 let Index=1;
 function AddItem(Productname,count,priceb,Pricea,total){
-        const TableName=getElementById("factor");
+        console.log("work");
+        const TableName=document.getElementById("factor");
         var newRow=TableName.insertRow();
         var RowNumber=newRow.insertCell(0);
         var ProductName=newRow.insertCell(1);
@@ -23,7 +23,7 @@ function AddItem(Productname,count,priceb,Pricea,total){
         priceB.innerHTML=priceb;
         PriceA.innerHTML=Pricea;
         Total.innerHTML=total;
-        Index+1;
+        Index+=1;
 }
-const Btn=getElementById("Add");
+const Btn=document.getElementById("Add");
 Btn.addEventListener("click", () => AddItem(item.ProductName,item.Count,item.priceB,item.PriceA,item.Total));
