@@ -1,3 +1,35 @@
-.button{
+body{
+    font-size: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
+table{
+    border: 1px solid rgb(233, 233, 233, 0%);
+    margin: 5rem;
+}
+
+tr{
+    border-bottom: 1x black;
+}
+
+th, td{
+    border: 1px solid rgb(233, 233, 233, 0%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+th:nth-child(2n+1),td:nth-child(2n+1){
+    background-color: rgb(224, 224, 224);
+}
+
+button{
+    margin: auto;
+    margin-top: 5rem;
+    width: 5rem;
+    height: 3rem;
+    color:white;
+    border: 1px solid rgb(255, 255, 255, 0%);
+    border-radius: 5rem;
+    background-color: rgb(86, 195, 239);
 }
