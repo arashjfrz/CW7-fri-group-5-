@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="theme-changer">
+      <div class="light circle" id="lightMode"></div>
+      <div class="dark circle" id="darkMode"></div>
+      <div class="colorfull circle" id="colorFull"></div>
+    </section>
+    <section class="content">
+      <h1>Sign Up</h1>
+      <form id="signupForm" onsubmit="return validForm()">
+        <label for="name">User Name:</label>
+        <input type="text" placeholder="Enter Your User Name Here:" id="name" />
+        <div class="error" id="name-error"></div>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Enter Your Email Here:" id="email" />
+        <div class="error" id="email-error"></div>
+
+        <label for="pass">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Your Password Here:"
+          id="pass"
+        />
+        <div class="error" id="pass-error"></div>
+
+        <label for="pass">Repeat Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Your Password Again:"
+          id="re-pass"
+        />
+        <div class="error" id="repass-error"></div>
+
+        <input type="submit" value="Sign Up" />
+        <div class="success" id="submit-message"></div>
+      </form>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

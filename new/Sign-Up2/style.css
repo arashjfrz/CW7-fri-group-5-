@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-color: #f4f4f4;
+  --secondary: #ffffff;
+  --submit-color: #3498db;
+  --header-color: #393939;
+  --font-color: #747474;
+}
+.dark-theme {
+  --primary-color: #1e1e1e;
+  --secondary-color: #2d2d2d;
+  --submit-color: #eb0062;
+  --header-color: #edeff0;
+  --font-color: #747474;
+}
+.color-theme {
+  --primary-color: rgb(35, 142, 192);
+  --secondary-color: #eec19d;
+  --submit-color: #f07d7d;
+  --header-color: #000000;
+  --font-color: #000000;
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: var(--secondary-color);
+  border: 1px solid lightgray;
+  width: 30vw;
+  height: max-content;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 2vw;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2.5vw;
+  margin-top: 2vw;
+  color: var(--header-color);
+  text-align: center;
+}
+label {
+  display: block;
+  font-size: 2rem;
+  margin-top: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+input {
+  display: block;
+  padding: 0.8vw;
+  padding-left: 0.5vw;
+  width: 100%;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #eaeaea;
+}
+input[value="Sign Up"] {
+  background-color: var(--submit-color);
+  margin-top: 2vw;
+}
+.theme-changer {
+  position: absolute;
+  width: 12vw;
+  height: 3.5vw;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  top: 2vw;
+  left: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vw;
+}
+.circle {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: 2px solid lightgray;
+  cursor: pointer;
+}
+.light {
+  background-color: white;
+}
+.dark {
+  background-color: #1e1e1e;
+}
+.colorfull {
+  background-color: purple;
+}
+.error {
+  color: #eb0062;
+  margin-top: 0.2vw;
+  font-size: 1.2rem;
+}
+.success {
+  margin-top: 0.5vw;
+  text-align: center;
+  font-size: 1.8rem;
+  color: lightseagreen;
+}
