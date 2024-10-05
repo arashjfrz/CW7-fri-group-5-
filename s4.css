@@ -1,0 +1,44 @@
+body{
+    padding: 5rem;
+}
+
+.clock{
+    background-color: beige;
+    width: 50vw;
+    height: 25vw;
+    min-width: 60rem;
+    min-height: 30rem;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255, 0%);
+    border-radius: 5rem;
+    display: grid;
+    justify-content: center;
+}
+
+.clock-display{
+    background-color: rgb(234, 206, 165);
+    border: 1px solid rgb(255, 255, 255, 0%);
+    border-radius: 3rem;
+    margin: auto;
+    width: 45vw;
+    min-width: 50rem;
+    height: 20vw;
+    min-height: 20rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.hour, .minute, .second{
+    font-family: sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin: .5rem;
+    border: 1px solid rgb(255, 255, 255, 0%);
+    border-radius: 2rem;
+    background-color: rgb(144, 200, 243);
+    width: 30%;
+    height: 15vw;
+    min-height: 18rem;
+    display: inline-block;
+}
